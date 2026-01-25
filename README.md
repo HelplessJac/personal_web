@@ -86,12 +86,49 @@ avatarUrl: 'https://example.com/your-avatar.jpg',
 **不设置头像**
 如果不设置 `avatarUrl` 或设置为 `undefined`，将显示默认的 👤 图标。
 
+### 添加项目截图
+
+有两种方式添加项目截图：
+
+**方式1：使用本地图片（推荐）**
+1. 将项目截图放到 `public/images/` 目录下（如 `project-portfolio.jpg`）
+2. 在 `src/data/projects.ts` 中设置：
+   ```typescript
+   {
+     id: 1,
+     name: '项目名称',
+     description: '项目描述...',
+     techStack: ['React', 'TypeScript'],
+     image: '/images/project-portfolio.jpg',  // 添加图片路径
+     link: 'https://example.com',
+     github: 'https://github.com/username/project',
+   }
+   ```
+
+**方式2：使用在线图片 URL**
+在 `src/data/projects.ts` 中直接设置图片 URL：
+```typescript
+image: 'https://example.com/project-screenshot.jpg',
+```
+
+**不设置截图**
+如果不设置 `image` 字段，将显示默认的 📱 图标占位符。
+
+**截图建议**：
+- 尺寸：1200x800px 或 16:9 比例
+- 格式：JPG（文件小）或 PNG（质量高）
+- 文件大小：建议压缩到 500KB 以下
+
 ### 修改个人信息
 
 编辑 `src/data/personal.ts` 文件：
 - `title`: 修改主标题/姓名
 - `subtitle`: 修改副标题/简介
 - `avatarUrl`: 设置头像图片路径或 URL
+
+编辑 `src/data/projects.ts` 文件：
+- 添加、修改或删除项目
+- 为每个项目设置 `image` 字段来显示截图
 
 ## 注意事项
 

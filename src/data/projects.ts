@@ -25,8 +25,12 @@ export const projects: Project[] = [
     name: '个人作品集网站',
     description: '这是一个很棒的项目描述，展示了项目的核心功能和特点。',
     techStack: ['React', 'TypeScript', 'Tailwind CSS'],
-    link: 'https://example.com',
-    github: 'https://github.com/username/project1',
+    // 方式1: 使用本地图片（将截图放在 public/images/ 目录下）
+    image: '/images/project-1.png',
+    // 方式2: 使用在线图片 URL
+    // image: 'https://example.com/project-screenshot.jpg',
+    link: 'https://personal-web-pi-three.vercel.app/',
+    github: 'https://github.com/HelplessJac/personal_web',
   },
   // {
   //   id: 2,
