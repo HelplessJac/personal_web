@@ -32,14 +32,15 @@ export const projects: Project[] = [
     link: 'https://personal-web-pi-three.vercel.app/',
     github: 'https://github.com/HelplessJac/personal_web',
   },
-  // {
-  //   id: 2,
-  //   name: '项目名称 2',
-  //   description: '这是另一个优秀的项目，具有独特的功能和设计。',
-  //   techStack: ['Vue.js', 'Node.js', 'MongoDB'],
-  //   link: 'https://example.com',
-  //   github: 'https://github.com/username/project2',
-  // },
+  {
+    id: 2,
+    name: '小杰笔记',
+    image: '/images/project-2.png',
+    description: '这是一个基于markdown的笔记软件，支持实时预览和导出。',
+    techStack: ['React', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://xiaojie-markdown.vercel.app/',
+    github: 'https://github.com/HelplessJac/xiaojie_markdown',
+  },
   // {
   //   id: 3,
   //   name: '项目名称 3',
